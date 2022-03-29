@@ -1,0 +1,462 @@
+:root {                                          /* para a Criação de Variaveis */
+    --primary-color: #151f30;                  /* A cor do back ground do main */
+    --White-color: #ffffff;                    /* cor Branca para ser utilizanda como a cor do texto quando o backround for o white */ 
+    --Gap: 3rem;
+    --Color-Laranja :#ff7a48;                  /* Cor Laranja do Logo */
+} 
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+html {
+    font-size: 62.5%;            /* para converter a pagina em Rems */
+    scroll-behavior: smooth;     /* para fazer a pagina rolar lentamete */ 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+body {
+    font-family: 'Open Sans', sans-serif;                        /* Fonte Open sans para o Body do documento */ 
+    font-size: 1.5rem; 
+    color: var(--primary-color);
+    line-height: 1.8;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Montserrat', sans-serif;                 /* Fonte Montserrat para todos os H */ 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h2 {
+    text-transform: uppercase;
+    font-size: 4rem; 
+    line-height: 1.2;
+    font-weight: bold;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h3 {
+    font-size: 3.5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h4 {
+    font-size: 3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h5 {
+    font-size: 2.5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+h6 {
+    font-size: 2rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+a {
+    text-decoration: none;                                             /* Retira todas o sublinhado do As */
+}
+p {
+    margin-bottom:  3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Main-Background {                                                    /* Classe do BackGround do Main */
+    background-image: url(/Image/Background\ Main\ Image.svg);            /* Imagem do BackGround - Azul */ 
+    background-size: cover;          
+    background-position: center center;
+    color: var(--White-color);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.White-background {                                                    /* Para deixar o backGround Branco */ 
+    background-color: var(--White-color);
+    color:var(--primary-color);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Main-Content {
+    max-width: 120rem;                                                /* Largura maxima do site*/
+    margin: 0 auto;
+    padding: 8rem var(--Gap);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Section {
+    min-height: 100vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color:var(--White-color); 
+    border-bottom: 0.1rem solid #eeeeee; 
+    background:#0593a2;    
+    z-index: 1;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu-Content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;  
+    flex-direction: column;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu-Content ul {
+    flex-direction: column;
+    justify-content: center;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu H1 {
+    font-size: 2.3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu H1 a {      
+    font-size: 4rem;                                                     /* para a Logo */
+    text-align: center;
+    color:(var(--White-color));  
+    background-color: var(--Color-Laranja);                            /* Uma cor para o logo */ 
+    border-radius: 0.5rem; 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu ul {                                               /* Para o menu inteiro */
+    list-style: none;
+    display: flex; 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu ul li a {                                          /* para o menu a Direita */
+    display: block;
+    color: black;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu ul li a::after {                                   /* Para colocar uma borda no menu a direita */
+    content:'';
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--Color-Laranja);
+    transition: all 0.5s ease-in-out;  
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu ul li a:hover::after {                             /* para fazer a transição da borda inferior do menu a direita */ 
+    width: 50%;
+    left: 25%;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.espaçamento-menu {
+    padding: 0.5rem;
+    background-color: var(--Color-Laranja); 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Intro-Content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--Gap);
+    min-height: 100vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Intro-Texto {                                           /* para alinhar o texto dentro do display Flex */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+ /* p::first-letter {                                             /* Para Deixar a primeira letra Ficar destacada  */ /* 
+    font-size: 7rem;
+    font-weight: bold;
+    color:var(--Color-Laranja);
+    text-transform: uppercase;
+    margin-top: -2rem;
+    margin-left: -1rem;
+    padding-right: 1rem;
+    float:left;
+}   
+ */ 
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Intro-Imagem  img {                                 /* Para a Formatação da Imagem */ 
+   max-width: 100%;
+   min-height: auto;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Top-3 {
+    display: flex; 
+    min-height: 100vh;
+    flex-flow: column wrap; 
+    justify-content: center;
+    text-align: center;
+    margin: 5rem 7.5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Top-3-Titulo h2 {                                      /* Formatação do titulo do Top 3 */ 
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Grid-one-conteudo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 15vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Grid-Grid-One {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--Gap);
+    margin-top: 5rem;
+    counter-reset: Contador-Grid;                                    /* Para a Criação de um Contador */ 
+    padding: var(--Gap);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Grid-Grid-One h4 {
+    position: relative;
+    font-size: 3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Grid-Grid-One article h4::before {                                 /* Incrementar um numero no inicio dos topicos */
+    counter-increment: Contador-Grid;
+    content: counter(Contador-Grid);
+    color: var(--Color-Laranja);
+    font-size: 8rem;
+    font-style: italic;
+    margin-right: 1.5rem;
+    margin-top: 5rem;
+    transform: rotate(30deg);                                       /* Para Rotacionar o numero */ 
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Descri {
+    padding-left: 5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Descri-subtitulo {
+    padding-left: 7.5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.galeria-titulo {
+    position: relative;
+    font-size: 3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Descri-galeria {
+    font-style: italic;
+    padding-left: 2rem;
+    margin-top: -3rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Fotos-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--Gap);
+    margin-top: 8rem;
+    padding: var(--Gap);
+    min-height: 15vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.galeria-1 {
+    position: relative;
+    font-size: 7.5rem;
+    margin-bottom: -3rem;
+    text-transform: uppercase;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.galeria-titulo {
+    display: block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 15vh;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Imagem-Galeria {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Imagem-Galeria img {                                         /* para fazer a trasição a imagem */
+    transition: all 500ms ease-in-out;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Imagem-Galeria img:hover {
+    transform: translate(-3%, 3%) scale(1.3) rotate(5deg);
+} 
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Tabela-geral {
+    display: flex; 
+    min-height: 1vh;
+    flex-flow: column wrap; 
+    justify-content: center;
+    text-align: center;
+    margin: 5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+table {
+    width: 100%;
+    min-width: 36rem;
+    margin-bottom: 7.5rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+table td, table th {
+    white-space: nowrap;                  /* para que a tabela não quebre o texto */ 
+    padding: 1rem;
+    border: 0.1rem solid var(--primary-color);
+    border-collapse: collapse;
+    text-align: left;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+tfoot td, table th {
+    background-color: rgba(226, 225, 225, 0.842);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Tabela-responsiva {
+    overflow: hidden;
+    overflow-x: auto;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.contatos-1 a {                                           /* para alinhar o texto dentro do display Flex */
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--Gap);
+    text-transform: uppercase;  
+    color: var(--White-color);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-contato {               /* Formulario de Contato */ 
+    grid-column: span 2;
+    
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont fieldset {
+    border: 1 solid;
+    border-color: rgb(196, 196, 196);
+    border-radius: 5rem;
+    padding: 5rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: var(--Gap);
+    text-transform: uppercase;
+    clear: both;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont {
+    flex: 1 1 10px;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont label {
+    display: block;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont input, .formulario-cont textarea {
+    border: none;
+    background: var(--White-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.full-width {
+    width: 100%;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont button {
+    border: 0.5rem solid darkgray;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.formulario-cont button:hover {
+    background-color: var(--primary-color);
+    color: var(--Color-Laranja);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+footer {
+    display: flex; 
+    min-height: 1vh;
+    flex-flow: column wrap; 
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+@media (max-width: 800px) {                  /* Média para mobile */ 
+    .Intro-Content,
+    .Grid-Grid-One, 
+    .Fotos-galeria
+    {
+        grid-template-columns: 1fr ;
+    }
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.Menu {
+ display: none;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.close-menu {
+    display: none;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.close-menu-label::after {                /* para deixar o menu no estilo mobile*/
+    content: '≡';
+    cursor: pointer;
+    position: fixed;
+    z-index: 3;
+    top: 0.5rem;
+    right: 2rem; 
+    left: -30rem;
+    background-color: var(--primary-color);
+    color: var(--White-color);
+    font-size: 4rem;
+    line-height: 3rem;
+    text-align: center;
+    padding: 2rem;
+
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.close-menu:checked ~ .Menu {
+    display: block;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.close-menu:checked~.close-menu-label::after {
+    content: 'X';
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.espaçamento-menu {                             
+    display: none;
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */
+.back-top {                            /* Menu para Voltar para o topo */
+   position: fixed; 
+   bottom: 6rem;
+   right: 6rem;
+   background-color: var(--White-color);
+   height: 5rem;
+   width: 5rem;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   border-radius: 5rem;
+   color: var(--primary-color);
+   border: 0.1rem solid var(--Color-Laranja);
+}
+/*  --------------------------------------------------------------------------------------------------------------------------------------------  */  
