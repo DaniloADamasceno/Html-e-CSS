@@ -1,6 +1,6 @@
 :root {                                          /* para a Criação de Variaveis */
     --primary-color: #151f30;                  /* A cor do back ground do main */
-    --White-color: #ffffff;                    /* cor Branca para ser utilizanda como a cor do texto quando o backround for o white */ 
+    --White-color: #ffffff;                    /* cor Branca para ser utilizando como a cor do texto quando o backround for o white */ 
     --Gap: 3rem;
     --Color-Laranja :#ff7a48;                  /* Cor Laranja do Logo */
 } 
@@ -131,19 +131,19 @@ p {
     display: block;
     color: black;
     padding: 0.5rem;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     position: relative;
 }
 /*  --------------------------------------------------------------------------------------------------------------------------------------------  */
 .Menu ul li a::after {                                   /* Para colocar uma borda no menu a direita */
     content:'';
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 0.5rem;
     left: 50%;
     width: 0;
-    height: 0.2rem;
+    height: 0.5rem;
     background: var(--Color-Laranja);
-    transition: all 0.5s ease-in-out;  
+    transition: all 0.8s ease-in-out;  
 }
 /*  --------------------------------------------------------------------------------------------------------------------------------------------  */
 .Menu ul li a:hover::after {                             /* para fazer a transição da borda inferior do menu a direita */ 
@@ -285,7 +285,7 @@ p {
     overflow: hidden;
 }
 /*  --------------------------------------------------------------------------------------------------------------------------------------------  */
-.Imagem-Galeria img {                                         /* para fazer a trasição a imagem */
+.Imagem-Galeria img {                                         /* para fazer a transição a imagem */
     transition: all 500ms ease-in-out;
 }
 /*  --------------------------------------------------------------------------------------------------------------------------------------------  */
@@ -423,7 +423,7 @@ footer p {
     z-index: 3;
     top: 0.5rem;
     right: 2rem; 
-    left: -30rem;
+    left: -100rem;
     background-color: var(--primary-color);
     color: var(--White-color);
     font-size: 4rem;
@@ -433,12 +433,12 @@ footer p {
 
 }
 /*  --------------------------------------------------------------------------------------------------------------------------------------------  */
-.close-menu:checked ~ .Menu {
-    display: block;
+.close-menu:checked~.close-menu-label::after {
+    content: '⊡';
 }
 /*  --------------------------------------------------------------------------------------------------------------------------------------------  */
-.close-menu:checked~.close-menu-label::after {
-    content: 'X';
+.close-menu:checked ~ .Menu {
+    display: block;
 }
 /*  --------------------------------------------------------------------------------------------------------------------------------------------  */
 .espaçamento-menu {                             
