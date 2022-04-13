@@ -1,10 +1,12 @@
 # Landing-Page
 
 
+
 Este projeto foi criado para colocar em pratica os conhecimentos adquiridos em HTML, CSS e Javascript.
-  O objetivo deste projeto e o desenvolvimento de uma landing page responsiva com a aplicação de varios estilos do CSS tais como , Displeys Block, grid e flex o incremento de tabelas responsivas , uma area dedicada a um formulario e outra pra contatos. 
+  O objetivo deste projeto e o desenvolvimento de uma landing Page responsiva com a aplicação de vários estilos do CSS tais como, Displays Block, grid e flex o incremento de tabelas responsivas , uma área dedicada a um formulário e outra pra contatos. 
 
 o projeto encontra-se hospedado no link abaixo:
+
 
 https://landingproject102.netlify.app/
 
