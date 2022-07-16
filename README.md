@@ -31,10 +31,11 @@ ________________________________________________________________________________
 
 
 *Atualização* 1.02* :
-> Melhorias de responsividade em dispositivos móveis 
-> Melhoria no menu
+> Melhorias de responsividade em dispositivos móveis. 
+> 
+> Melhoria no menu.
 
 
 *Atualização* 1.01* :
-> Atualização de pequenos bugs e a responsividade em dispositivos móveis
+> Atualização de pequenos bugs e a responsividade em dispositivos móveis.
 
