@@ -1,14 +1,14 @@
 # Landing-Page
 
+![Landing Page](https://user-images.githubusercontent.com/71226047/179368742-b86caef1-bc23-4156-a295-c57a2eafdf44.jpg)
+
+Este projeto foi criado para colocar em prática os conhecimentos adquiridos em HTML, CSS e Javascript.
+  O objetivo deste projeto e o desenvolvimento de uma landing Page responsiva com a aplicação de vários estilos do CSS tais como, Displays Block, grid e flex o incremento de tabelas responsivas, uma área dedicada a um formulário e outra para contatos. 
+
+O projeto encontra-se hospedado no link abaixo:
 
 
-Este projeto foi criado para colocar em pratica os conhecimentos adquiridos em HTML, CSS e Javascript.
-  O objetivo deste projeto e o desenvolvimento de uma landing Page responsiva com a aplicação de vários estilos do CSS tais como, Displays Block, grid e flex o incremento de tabelas responsivas , uma área dedicada a um formulário e outra pra contatos. 
-
-o projeto encontra-se hospedado no link abaixo:
-
-
-https://landingproject102.netlify.app/
+[Landing Page](https://landingproject102.netlify.app/)
 
 Tecnologias utilizadas 
 
@@ -24,12 +24,17 @@ Tecnologias utilizadas
 
 
 ______________________________________________________________________________________________________________________________________________________________
-Atualizações do Projeto 
+# Atualizações de Projeto 
 
-atualização 1.02
-› Melhorias em responsabilidade em dispositivos móveis 
-› Melhoria do menu 
+ *Atualização* 1.03* :
+> Adicionada imagem ao Readme e correções gramaticais.
 
-Atualização 1.01 
-› Atualização de pequenos bugs e a responsabilidade em dispositivos móveis
+
+*Atualização* 1.02* :
+> Melhorias de responsividade em dispositivos móveis 
+> Melhoria no menu
+
+
+*Atualização* 1.01* :
+> Atualização de pequenos bugs e a responsividade em dispositivos móveis
 
