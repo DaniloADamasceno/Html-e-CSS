@@ -1,5 +1,8 @@
 # Landing-Page
 
+![GitHub repo size](https://img.shields.io/github/repo-size/DaniloADamasceno/Html-e-CSS?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/DaniloADamasceno/Html-e-CSS?style=for-the-badge)
+
 ![Landing Page](https://user-images.githubusercontent.com/71226047/179368742-b86caef1-bc23-4156-a295-c57a2eafdf44.jpg)
 
 Este projeto foi criado para colocar em prática os conhecimentos adquiridos em HTML, CSS e Javascript.
@@ -23,10 +26,16 @@ Tecnologias utilizadas
 •	     [![Netlify Status](https://api.netlify.com/api/v1/badges/4fcccf50-a6d6-452b-839e-6852f4824112/deploy-status)](https://app.netlify.com/sites/clocktimer101/deploys)
 
 
+
+## Autores
+
+- [@DaniloADamasceno](https://github.com/DaniloADamasceno)
+
+
 ______________________________________________________________________________________________________________________________________________________________
 # Atualizações de Projeto 
 
- *Atualização* 1.03* :
+ *Atualização* 1.03* e 1.2 :
 > Adicionada imagem ao Readme e correções gramaticais.
 
 
